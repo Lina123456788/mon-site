@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz sur la science</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn">Acceuil</a></li>
+        <li><a href="parcours.html" class="btn">Parcours</a></li>
+        <li><a href="competences.html" class="btn">Compétences</a></li>
+        <li><a href="stages.html" class="btn">Stages</a></li>
+        <li><a href="matieres.html" class="btn">Matiéres</a></li>
+        <li><a href="quiz.html" class="btn">Quiz</a></li>
+        <li><a href="formulaire.html" class="btn">Formulaire</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form name="form" style="margin-top: 50px;">
+      
+      <section class="cardss" id="quiz">
+        <div class="content-quiz">
+          <h1>Bienvenue au Quiz</h1>
+          <h3 class="quiz-h3" >Choisissez votre théme</h3>
+    
+
+          <div class="card-quiz" style="margin-top:10px;">
+            <div class="info-quiz ">
+              <ul>
+                 <a class="linktohtmlquiz" href="../pages/quizHtml.html"> HTML</a></li>
+              </ul>
+            </div>
+          </div><br>
+
+          
+            <div class="card-quiz">
+              <div class="info-quiz ">
+                <ul>
+                  <a class="linktohtmlquiz" href="../pages/quizCss.html"> CSS</a></li>
+               </ul>
+              </div>
+            </div><br>
+
+            
+              <div class="card-quiz">
+                <div class="info-quiz ">
+                  <ul>
+                    <a  target="_blank" class="linktohtmlquiz" href="../pages/quizJs.html"> JavaScript</a></li>
+                 </ul>
+                </div>
+              </div><br>
+        </div>
+
+
+
+      </section>
+    </form>
+
+
+    
+
+<script>
+        function submitQuiz() {
+            // Récupérer les réponses
+
+            function submitQuiz() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked'),
+                q2: document.querySelector('input[name="q2"]:checked'),
+                q3: document.querySelector('input[name="q3"]:checked'),
+            };
+
+            const resultContainer = document.getElementById('result');
+            let score = 0;
+
+            if (answers.q1 && answers.q1.value === "b") {
+                score++;
+            }
+
+            if (answers.q2 && answers.q2.value === "a") {
+                score++;
+            }
+
+            if (answers.q3 && answers.q3.value === "b") {
+                score++;
+            }
+
+            resultContainer.innerHTML = `Votre score : ${score}/3`;
+        }
+
+
+
+
+
+
+
+
+
+            // Vérifier les réponses et afficher le résultat
+            const resultContainer = document.getElementById('result');
+
+            if (answer1 && answer2 && answer3) {
+                const score = calculateScore(answer1.value, answer2.value, answer3.value);
+                resultContainer.innerHTML = `Votre score : ${score}/3`;
+            } else {
+                resultContainer.innerHTML = "Veuillez répondre à toutes les questions.";
+            }
+        }
+
+        function calculateScore(answer1, answer2, answer3) {
+            let score = 0;
+
+            // Vérifier les réponses correctes
+            if (answer1 === "paris") {
+                score++;
+            }
+
+            if (answer2 === "blue") {
+                score++;
+            }
+
+            if (answer3 === "7") {
+                score++;
+            }
+
+            return score;
+        }
+    </script>
+
+
+
+
+
+
+  </main>
+
+</body>
+
+<hr>
+<footer>
+  <p>&copy; 2023 Lina Ben Hamadou</p>
+</footer>
+
+</html>

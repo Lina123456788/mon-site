@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lina Ben Hamadou - Site Personnel</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+
+    <a class="return-menu" href="quiz.html"><img class="home" src="../images/home_10102571.png"></a>
+
+    <section class="cardss" id="quizhtml">
+        <h1>Quiz Théme HTML</h1>
+        <div class="contentquizhtml">
+
+            <form name="submitQuiz">
+                <!--q1------->
+                <div class="card-qh">
+
+                    <div class="question" id="question1">
+                        <p>1. Laquelle de ces syntaxes est correcte ?</p>
+                        <ul class="options" id="options1">
+                            <input type="radio" name="q1" value="a"> if (a != 2) {}</li>
+                            <input type="radio" name="q1" value="b">  if a != 2 {}</li>
+                            <input type="radio" name="q1" value="c">if (a <> 2) {}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--q2----->
+                <div class="card-qh">
+
+                    <div class="question" id="question2">
+                        <p>2. Quel est le rôle de JavaScript dans le développement web?</p>
+                        <ul class="options" id="options2">
+                            <input type="radio" name="q2" value="a">  Gérer les bases de données<br>
+                            <input type="radio" name="q2" value="b"> Ajouter des fonctionnalités dynamiques aux pages web<br>
+                            <input type="radio" name="q2" value="c">  Contrôler le style des pages web</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--q3-->
+                <div class="card-qh">
+
+                    <div class="question" id="question3">
+                        <p>3. Quel événement JavaScript est déclenché lorsqu'un utilisateur clique sur un élément HTML?</p>
+                        <ul class="options" id="options3">
+                            <input type="radio" name="q3" value="a"> onhover
+                        </li>
+                            <input type="radio" name="q3" value="b"> onmouseover</li>
+                            <input type="radio" name="q3" value="c">onclick</li>
+                        </ul>
+                    </div>
+                </div>
+
+             
+
+            </form>
+
+
+
+
+            <div id="result"></div>
+        </div>
+        <button class="button" style=" margin-left: 770px;" onclick="submitQuiz()">Valider</button>
+    </section>
+
+    <script>
+        function submitQuiz() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked'),
+                q2: document.querySelector('input[name="q2"]:checked'),
+                q3: document.querySelector('input[name="q3"]:checked'),
+                q4: document.querySelector('input[name="q4"]:checked'),
+            };
+
+            const resultContainer = document.getElementById('result');
+            let score = 0;
+
+            if (answers.q1 && answers.q1.value === "a") {
+                score++;
+            }
+
+            if (answers.q2 && answers.q2.value === "b") {
+                score++;
+            }
+
+            if (answers.q3 && answers.q3.value === "b") {
+                score++;
+            }
+
+            if (answers.q4 && answers.q4.value === "c") {
+                score++;
+            }
+
+            resultContainer.innerHTML = `Votre score : ${score}/4`;
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+<hr>
+<footer >
+    <p>&copy; 2023 Lina Ben Hamadou<br>
+        Tél : +216 92 912 712 <br>
+        mail: benhamadoulina6@gmail.com</p>
+</footer>
+
+</html>

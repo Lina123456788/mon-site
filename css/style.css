@@ -1,0 +1,591 @@
+/* Réinitialisation des styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+  background-image: url(../images/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+
+}
+
+main {
+
+  margin-bottom: 10px;
+  margin-top: 2px;
+
+}
+
+.container {
+  margin-top: 9px;
+}
+
+/* Styles pour l'en-tête */
+header {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-family: cursive;
+
+}
+
+h1 {
+  color: chocolate;
+  text-align: center;
+  padding-left: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-left: -110px;
+  font-size: 30px;
+
+}
+
+p {
+  text-align: center;
+  margin-left: 150px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+
+}
+
+.contact {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+a.btn {
+  text-decoration: none;
+  color: slategrey;
+  padding: 8px 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+
+
+}
+
+nav ul li a {
+  color: cadetblue;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+nav ul li a:hover {
+  color: #e8491d;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+
+}
+
+a.btn:visited {
+  text-decoration: underline;
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo {
+  width: 220px;
+  /* Largeur de votre image */
+  height: 220px;
+  /* Hauteur de votre image */
+  overflow: hidden;
+  /* Masque tout contenu qui dépasse des limites */
+  border-radius: 50%;
+  /* Convertit le conteneur en un cercle */
+  float: right;
+  margin-right: 100px;
+  margin-top: -30px;
+
+
+
+}
+
+.photo img {
+  width: 100%;
+  /* Assure que l'image remplit complètement le conteneur circulaire */
+  height: auto;
+  /* Garantit que la hauteur s'ajuste automatiquement pour maintenir les proportions */
+  display: block;
+  /* Assure un affichage en bloc pour éviter l'apparition d'espaces supplémentaires */
+
+}
+
+
+/* Styles pour la section d'accueil */
+#accueil {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Styles pour les icons de reseaux sociaux */
+.social-icons {
+  margin-top: 35px;
+  margin-left: 250px;
+  transform: scale(1.3);
+
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+/* Styles pour le footer */
+footer {
+  margin-top: 80px ;
+  background: transparent;
+  color: rgba(13, 13, 13, 0.501);
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 150px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  margin-left: -90px;
+
+}
+
+/* page parcours  */
+#parcour {
+  padding: 50px 0;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: slategrey;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+h2.parcours {
+  color: chocolate;
+  text-align: center;
+  margin-left: -110px;
+  font-size: 30px;
+}
+
+h2.les-image {
+  color: chocolate;
+  text-align: center;
+  margin-left: -55px;
+  font-size: 30px;
+}
+
+.tab {
+  margin-top: 9px;
+}
+
+.image-bac img {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+
+}
+
+.image-licence img {
+  text-align: center;
+  width: 600px;
+  height: 200px;
+}
+
+/* page competences */
+
+#competences {
+
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.skill-card {
+  background-color: #8f8b8b1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px slategrey;
+  padding: 20px;
+  width: calc(50% - 10px);
+  margin-left: 40px;
+  text-align: center;
+  transition: 0.7s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  /* transform: scale(1.1);*/
+
+}
+
+.skill-category {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+h2.comp {
+  color: chocolate;
+  text-align: center;
+  margin-left: -55px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+/*--------stage------------*/
+
+.title-stage {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  color: chocolate;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-left:20px;
+}
+.bp{
+  margin-right: 150px;
+  font-size: 30px;
+}
+.content-stage {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2f2a2a1d;
+  width: 30.25em;
+  /*16 px */
+  height: 30.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+  /* (psitife: droite /negatif left))*/
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+
+}
+
+.card:hover {
+  transform: scale(1.1);
+  /* transform: scale(1.1);*/
+
+}
+
+.iconn {
+  font-size: 1.5em;
+  /* Ajustez la taille de la police selon vos besoins */
+  display: inline;
+  /* Pour que l'icône soit sur une ligne séparée */
+  margin-bottom: 5px;
+  text-align: right;
+
+}
+
+
+.cl{
+  color: cadetblue;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+  margin-top: -120px;
+  text-align: center;
+
+}
+.pl{
+  margin-left: 10px;
+}
+
+.img-stage {
+  width: 30%;
+  /* Ajustez la largeur de l'image selon vos besoins */
+  height: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+/*----------Matiéres-----*/
+
+.title-matiere {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  color: chocolate;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.content-matiere {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.card-mat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2f2a2a1d;
+  width: 400px;
+  /*16 px */
+  height: 400px;
+  box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+  /* (psitife: droite /negatif left))*/
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 20px;
+  transition: 0.7s ease;
+  text-align: left;
+}
+
+.card-mat:hover {
+  transform: scale(1.1);
+  /* transform: scale(1.1);*/
+
+}
+
+.iconn-mat {
+  font-size: 1.5em;
+  /* Ajustez la taille de la police selon vos besoins */
+  display: inline;
+  /* Pour que l'icône soit sur une ligne séparée */
+  margin-bottom: 5px;
+  text-align: right;
+
+}
+
+.info-mat {
+  text-align: center;
+}
+
+.info-mat h3 {
+  color: cadetblue;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+  margin-top: -120px;
+  text-align: center;
+
+}
+
+.info-mat p {
+  text-align: left;
+  margin-left: 3px;
+  font-size: 17px;
+}
+
+.img-mat {
+  width: 30%;
+  /* Ajustez la largeur de l'image selon vos besoins */
+  height: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  float: left;
+}
+
+/* -----------------quiz---------------*/
+.home {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.content-quiz {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* Met les éléments en colonne */
+  align-items: center;
+}
+
+.card-quiz {
+  background-color: #8f8b8b1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px slategrey;
+  padding: 20px;
+  width: calc(50% - 10px);
+  margin-left: 40px;
+  text-align: center;
+  transition: 0.7s ease;
+}
+
+.card-quiz:hover {
+  transform: scale(1.1);
+  /* transform: scale(1.1);*/
+}
+
+a.linktohtmlquiz {
+  text-decoration: none;
+}
+
+
+.info-quiz a {
+  color: cadetblue;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+  margin-top: -120px;
+  text-align: center;
+  
+}
+
+/*-----------------------------------quizHtml-----------------------*/
+
+.contentquizhtml {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 570px;
+
+
+
+  
+}
+.card-qh {
+  background-color: #8f8b8b1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px slategrey;
+  padding: 20px;
+  width: calc(50% - 10px);
+  margin-left: 40px;
+  text-align: center;
+  transition: 0.7s ease;
+
+  margin-bottom: 20px; /* Ajoute un espacement entre les lignes de cartes */
+}
+ 
+.contentquizhtml p{
+  text-align: left;
+  margin: 0px; 
+
+}
+.h1{
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  color: chocolate;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.button{
+  color: black;
+  background-color: #4c99af1a; /* Couleur de fond */
+  border-radius: 5px;
+    padding: 10px 20px; /* Remplissage du bouton */
+    font-size: 15px; /* Taille de la police */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none; /* Supprime la bordure */
+    cursor: pointer; /* Change le curseur au survol */
+    /* Ajoutez d'autres styles selon vos préférences */
+    margin-left: 650px;
+}
+.button:hover {
+  background-color: #45a049; /* Couleur de fond au survol */
+}

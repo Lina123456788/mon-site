@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lina Ben Hamadou - Site Personnel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="btn">Acceuil</a></li>
+        <li><a href="parcours.html" class="btn">Parcours</a></li>
+        <li><a href="competences.html" class="btn">Compétences</a></li>
+        <li><a href="stages.html" class="btn">Stages</a></li>
+        <li><a href="matieres.html" class="btn">Matiéres</a></li>
+        <li><a href="quiz.html" class="btn">Quiz</a></li>
+        <li><a href="formulaire.html" class="btn">Formulaire</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+        <form action="action_page.php" name="formulaire">
+          <center><div class=" formulaire">
+          <h1>Pour me contacter Veuillez remlpir ce Formulaire </h1>
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Entrez votre nom: </label>  
+              <input type="text" id="nom" name="nom" required>
+            </div><br>
+            <div class="col-75">
+              <label for="mail">Entrez votre email: </label>  
+              <input type="email" id="mail" name="mail" required>
+            </div><br>
+          </div>
+            <div class="col-25">
+              <label for="message">Message: </label>
+              <textarea name="msg" id="message" style="margin-left:50px"></textarea>
+            </div><br>
+          <div class="row" style="margin-left:120px" >
+            <input type="submit" value="Envoyer" style="margin-right:20px;">
+            <input type="reset" value="Recommencer">
+          </div>
+        </div></center>
+        </form>
+
+
+  </main>
+
+</body>
+
+<hr>
+<footer>
+  <p>&copy; 2023 Lina Ben Hamadou</p>
+</footer>
+
+</html>
